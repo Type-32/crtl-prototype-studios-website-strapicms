@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_gallery_content_types_motions",
+  "info": {
+    "displayName": "Motion",
+    "icon": "television"
+  },
+  "options": {},
+  "attributes": {
+    "motionTitle": {
+      "type": "string",
+      "required": true,
+      "minLength": 1,
+      "default": "Untitled Motion"
+    },
+    "motionContext": {
+      "type": "text",
+      "required": false
+    },
+    "motionPiece": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

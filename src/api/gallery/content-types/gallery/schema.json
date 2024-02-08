@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "galleryTitle": {
+      "type": "string",
+      "required": true,
+      "default": "Untitled Gallery",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "galleryBrief": {
+      "type": "text",
+      "required": true,
+      "default": "I don't know what to put here."
+    },
+    "galleryContent": {
+      "type": "dynamiczone",
+      "components": [
+        "gallery-content-types.frame",
+        "gallery-content-types.motion",
+        "gallery-content-types.track"
+      ],
+      "required": true,
+      "min": 1
+    },
+    "gallerySlug": {
+      "type": "uid",
+      "targetField": "galleryTitle",
+      "required": true
+    }
+  }
+}

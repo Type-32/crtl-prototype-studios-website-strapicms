@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_gallery_content_types_frames",
+  "info": {
+    "displayName": "Frame",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "frameTitle": {
+      "type": "string",
+      "default": "Untitled Frame",
+      "required": true,
+      "minLength": 1
+    },
+    "frameContext": {
+      "type": "text",
+      "required": true
+    },
+    "framePiece": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
