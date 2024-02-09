@@ -8,7 +8,7 @@ export default ({ env }) => ({
         s3Options:{
           accessKeyId: env('MINIO_ACCESS_KEY_ID'),
           secretAccessKey: env('MINIO_ACCESS_SECRET'),
-          endpoint: env('MINIO_ENDPOINT'),
+          baseUrl: env('MINIO_ENDPOINT'),
           region: 'us-west-rack2', // set as default on the minio config
           params: {
             Bucket: env('MINIO_BUCKET'),
