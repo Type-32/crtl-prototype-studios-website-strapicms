@@ -19,6 +19,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
+    "strapi-plugin-schemas-to-ts": "^1.1.21",
     "strapi-provider-upload-minio": "github:ericCHxia/strapi-provider-upload-minio",
     "strapi-upload-minio-v4": "^1.0.1",
     "strapi4-ftp-provider": "^1.0.5",

@@ -1,6 +1,9 @@
 import {region} from "@smithy/signature-v4/dist-types/suite.fixture";
 
 export default ({ env }) => ({
+  'schemas-to-ts': {
+    enabled: true,
+  },
   upload: {
     config: {
       provider: 'strapi-upload-minio-v4',
