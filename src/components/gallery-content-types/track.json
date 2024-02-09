@@ -2,7 +2,8 @@
   "collectionName": "components_gallery_content_types_tracks",
   "info": {
     "displayName": "Track",
-    "icon": "music"
+    "icon": "music",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,8 +17,16 @@
       "type": "text"
     },
     "trackPiece": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "audios"
+      ]
+    },
+    "trackCover": {
+      "allowedTypes": [
+        "images"
       ],
       "type": "media",
       "multiple": false,

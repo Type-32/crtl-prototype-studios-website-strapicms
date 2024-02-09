@@ -819,6 +819,11 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
       >;
     gallerySlug: Attribute.UID<'api::gallery.gallery', 'galleryTitle'> &
       Attribute.Required;
+    galleryAuthor: Attribute.Relation<
+      'api::gallery.gallery',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

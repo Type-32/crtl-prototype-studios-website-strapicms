@@ -38,6 +38,11 @@
       "type": "uid",
       "targetField": "galleryTitle",
       "required": true
+    },
+    "galleryAuthor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

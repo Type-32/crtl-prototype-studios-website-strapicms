@@ -23,6 +23,7 @@ export interface GalleryContentTypesMotion extends Schema.Component {
   info: {
     displayName: 'Motion';
     icon: 'television';
+    description: '';
   };
   attributes: {
     motionTitle: Attribute.String &
@@ -33,6 +34,7 @@ export interface GalleryContentTypesMotion extends Schema.Component {
       Attribute.DefaultTo<'Untitled Motion'>;
     motionContext: Attribute.Text;
     motionPiece: Attribute.Media & Attribute.Required;
+    motionCover: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -41,6 +43,7 @@ export interface GalleryContentTypesTrack extends Schema.Component {
   info: {
     displayName: 'Track';
     icon: 'music';
+    description: '';
   };
   attributes: {
     trackTitle: Attribute.String &
@@ -51,6 +54,7 @@ export interface GalleryContentTypesTrack extends Schema.Component {
       Attribute.DefaultTo<'Untitled Track'>;
     trackContext: Attribute.Text;
     trackPiece: Attribute.Media & Attribute.Required;
+    trackCover: Attribute.Media & Attribute.Required;
   };
 }
 
