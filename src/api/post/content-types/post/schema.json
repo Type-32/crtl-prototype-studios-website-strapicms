@@ -61,6 +61,11 @@
       },
       "type": "richtext",
       "required": true
+    },
+    "postAuthor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

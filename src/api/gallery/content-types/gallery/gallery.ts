@@ -11,7 +11,7 @@ export interface Gallery {
     galleryBrief: string;
     galleryContent: any;
     gallerySlug: string;
-    galleryAuthor?: { data: User };
+    galleryAuthors: { data: User[] };
   };
 }
 export interface Gallery_Plain {
@@ -20,7 +20,7 @@ export interface Gallery_Plain {
   galleryBrief: string;
   galleryContent: any;
   gallerySlug: string;
-  galleryAuthor?: User_Plain;
+  galleryAuthors: User_Plain[];
 }
 
 export interface Gallery_NoRelations {
@@ -29,7 +29,7 @@ export interface Gallery_NoRelations {
   galleryBrief: string;
   galleryContent: any;
   gallerySlug: string;
-  galleryAuthor?: number;
+  galleryAuthors: number[];
 }
 
 export interface Gallery_AdminPanelLifeCycle {
@@ -38,5 +38,5 @@ export interface Gallery_AdminPanelLifeCycle {
   galleryBrief: string;
   galleryContent: any;
   gallerySlug: string;
-  galleryAuthor?: AdminPanelRelationPropertyModification<User_Plain>;
+  galleryAuthors: AdminPanelRelationPropertyModification<User_Plain>;
 }

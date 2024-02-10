@@ -819,9 +819,9 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
       >;
     gallerySlug: Attribute.UID<'api::gallery.gallery', 'galleryTitle'> &
       Attribute.Required;
-    galleryAuthor: Attribute.Relation<
+    galleryAuthors: Attribute.Relation<
       'api::gallery.gallery',
-      'oneToOne',
+      'oneToMany',
       'plugin::users-permissions.user'
     >;
     createdAt: Attribute.DateTime;
@@ -896,6 +896,11 @@ export interface ApiPostPost extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    postAuthor: Attribute.Relation<
+      'api::post.post',
+      'oneToOne',
+      'plugin::users-permissions.user'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

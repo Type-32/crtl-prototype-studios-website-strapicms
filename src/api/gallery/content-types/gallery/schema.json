@@ -39,9 +39,9 @@
       "targetField": "galleryTitle",
       "required": true
     },
-    "galleryAuthor": {
+    "galleryAuthors": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
     }
   }
